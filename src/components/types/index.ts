@@ -9,4 +9,10 @@ export type Expense = {
 export type DraftExpense = Omit<Expense, 'id'>
 
 type ValuePiece = Date | null
-type Value = ValuePiece | [ValuePiece, ValuePiece]
+export type Value = ValuePiece | [ValuePiece, ValuePiece]
+
+export type Category = {
+    id: string
+    name: string
+    icon: string
+}
